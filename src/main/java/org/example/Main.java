@@ -1,6 +1,8 @@
 package org.example;
 
 
+import com.google.gson.Gson;
+
 import java.util.Map;
 
 public class Main {
@@ -9,7 +11,7 @@ public class Main {
                 "name", "Bohdan",
                 "lastName", "Uhryniuk"
         );
-//        String gson = new Gson().toJson(map);
-        System.out.println(map.entrySet());
+        String gson = new Gson().toJson(map);
+        System.out.println(gson);
     }
 }
